@@ -16,6 +16,13 @@ footer {
     font-size: 20px;
     text-align: center;
 }
+.img2 {
+    float: center;
+    display: block;
+    margin: 0 auto;
+    max-height: 500px;
+    border: 5px solid white;
+}
 .img1 {
     float: right;
     display: block;
