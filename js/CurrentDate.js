@@ -1,14 +1,5 @@
 let d = new Date();
 
-let weekday = new Array(7);
- weekday[0] = "Sunday";
- weekday[1] = "Monday";
- weekday[2] = "Tuesday";
- weekday[3] = "Wednesday";
- weekday[4] = "Thursday";
- weekday[5] = "Friday";
- weekday[6] = "Saturday";
-
 let month = new Array(12);
  month[0] = "January";
  month[1] = "February";
@@ -24,4 +15,4 @@ let month = new Array(12);
  month[11] = "December";
 
 
-document.getElementById("currentDate").innerHTML = "Today is: " + weekday[d.getDay()] + ", " + d.getDate() + " " + month[d.getMonth()] + " " + d.getFullYear();
+document.getElementById("currentDate").innerHTML = "Today is: " + month[d.getMonth()] + ", " + d.getDate() + " " + d.getFullYear();
