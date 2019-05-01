@@ -1,6 +1,12 @@
 <!doctype html>
 <html>
-    <script type="text/javascript" src="js/CurrentDate.js"></script>
+    <script type="text/javascript">
+        // Get Current Date
+        let today = new Date(); // new Date object
+        // now concatenate formatted output
+        let date = (today.getMonth()+1) + " / " +  today.getDate() + " / " + today.getFullYear();
+        document.getElementById('currentdate').innerHTML = date;
+    </script>
     <head>
         <title>CIT 160: Assignment Portal</title>
         <meta charset="utf-8">
