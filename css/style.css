@@ -13,7 +13,8 @@ footer {
     padding: 20px 20px 20px;
     border: 5px solid black;
     color: rgb(201, 201, 201);
-    font-size: 20px;
+    font-family: "Lucida Console", Monaco, monospace;
+    font-size: 10px;
     text-align: center;
 }
 .img2 {
@@ -32,21 +33,25 @@ footer {
 }
 h1 {
     color: rgb(255, 255, 255);
-    font-size: 60px;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    font-size: 70px;
     text-align: left;
 }
 h2 {
     color: rgb(201, 201, 201);
-    font-size: 25px;
+    font-family: "Lucida Console", Monaco, monospace;
+    font-size: 45px;
     text-align: left;
 }
 h3 {
     color: darkslateblue;
+    font-family: "Lucida Console", Monaco, monospace;
     margin: 20px;
-    font-size: 25px
+    font-size: 35px
 
 }
 ul {
     color: black;
+    font-family: "Lucida Console", Monaco, monospace;
     font-size: 20px
 }
