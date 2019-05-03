@@ -33,14 +33,14 @@ footer {
 }
 h1 {
     color: rgb(255, 255, 255);
-    font-family: "Lucida Console", Monaco, monospace;
+    font-family: Impact, Charcoal, sans-serif;
     font-size: 70px;
     text-align: left;
 }
 h2 {
     color: rgb(201, 201, 201);
     font-family: "Lucida Console", Monaco, monospace;
-    font-size: 45px;
+    font-size: 40px;
     text-align: left;
 }
 h3 {
