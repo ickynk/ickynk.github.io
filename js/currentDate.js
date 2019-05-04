@@ -1,6 +1,5 @@
-let d = new Date();
-// Test Message
-let month = new Array(12);
+let d = new Date(); //Creates shortcut for the command "new Date()" to be used later in the script
+let month = new Array(12); //Translates received numeric value for month into the written month
  month[0] = "January";
  month[1] = "February";
  month[2] = "March";
@@ -14,5 +13,5 @@ let month = new Array(12);
  month[10] = "November";
  month[11] = "December";
 
-
+//Below...Creates an id to be called by the HTML file; on run pulls the current month, date and year.
 document.getElementById("currentDate").innerHTML = "Today is: " + month[d.getMonth()] + ", " + d.getDate() + " " + d.getFullYear();
