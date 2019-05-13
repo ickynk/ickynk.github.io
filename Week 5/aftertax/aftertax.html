@@ -2,23 +2,24 @@
 <html>
             <meta charset="utf-8">
             <meta name="viewport" content="width=device-width, initial-scale=1">
-            <title>CIT 160 - Personalized Scripture Application</title>
-            <meta name="description" content="This page contains an application for week 4 of CIT 160">
-        <link href="../Script/css/style.css" rel="stylesheet">
-    <header>
-        <h1>Week 4: Personalized Scripture</h1>
-        <h2>Nicholas Hudson</h2>
-    </header>
-    <main>
-        <h3>Personalized Scripture</h3>
-        <label>Your Name: <input type="text" id="nname"></label>
-        <label><button onclick="GenScript()">Click to Generate </button></label>
-        <hr>
-        <p>Personalized Scripture: Enos 1: 4-6 <br> <span id="output"></span></p>
-    </main>
-    <footer>
-        &copy;2019 &bull; Nicholas Hudson &bull; BYU-Idaho &bull; CIT 160 &bull; <span id="currentdate"></span>
-    </footer>
-    <script src="../Script/js/scripture.js"></script>
+            <title>CIT 160 - Take Home Pay Calculator</title>
+            <meta name="description" content="This page contains an application for week 5 of CIT 160">
+        <link href="../aftertax/css/style.css" rel="stylesheet">
+        <header>
+                <h1>Week 5: Arithmatic</h1>
+                <h2>Nicholas Hudson</h2>
+              </header>
+              <main>
+                <h3>Net Pay Calculator</h3>
+                <label>Number of Hours Worked: <input type="number" id="hr" value=0></label>
+                <label>Standard Wage Per Hour: $<input type="number" id="w" value=0></label>
+                <label><button onclick="math()">Calculate</button></label>
+                <hr>
+                <p>Net Pay: $<input id="output" type="number" disabled value="0"></p>
+              </main>
+              <footer>
+                &copy;2019 &bull; Nicholas Hudson &bull; BYU-Idaho &bull; CIT 160 &bull; <span id="currentdate"></span>
+              </footer>
+    <script src="../aftertax/js/aftertax.js"></script>
     
 </html>
