@@ -11,5 +11,5 @@ function math() {
   let h = document.getElementById("h").value;
   let output = document.getElementById("output");
 // Calculate the volume of a cylinder and then convert inches cubed into liters of volume.
-  output.value = Math.PI * r * r * h / 61.024;
+  output.value = Math.PI * Math.pow (r, 2) * h / 61.024;
 }

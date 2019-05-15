@@ -1,5 +1,7 @@
 html {
     background-color: darkgrey;
+    max-width: 1000px;
+    margin: 0 auto;
 }
 header {
     margin: 0 auto;
