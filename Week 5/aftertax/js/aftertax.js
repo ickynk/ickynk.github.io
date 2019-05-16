@@ -15,8 +15,12 @@ OUTPUT: Display result in document
 function math() {
   let hr = document.getElementById("hr").value;
   let w = document.getElementById("w").value;
-//PROCESSING  
-  let output = (hr * w) * .85
+//PROCESSING 
+  if (hr, w == "0") {
+    let output = "Please enter Hours worked and Standard Wage"
+  document.getElementById("output").innerHTML = output;
+  } else {
+  let output = "$ " + (hr * w) * .85
 //OUTPUT
   document.getElementById("output").innerHTML = output;
-}
+}}
