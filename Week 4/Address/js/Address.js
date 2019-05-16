@@ -4,7 +4,12 @@ let today = new Date(); // new Date object
 let date = (today.getMonth()+1) + " / " +  today.getDate() + " / " + today.getFullYear();
 document.getElementById('currentdate').innerHTML = date;
 
-//Retrieve input from HTML and concatenat into a text string
+/* Design Table
+INPUT: HTML id's "City", "State", and "Zip" receive input from user
+PROCESSING: Javascript concactenates the address using the HTML inputs
+OUTPUT: Updates the output with the concactenated string. 
+*/
+
 function GenScript() {
 	output.textContent = City.value + ", " + State.value + " " + Zip.value;
 }
