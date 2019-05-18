@@ -17,6 +17,8 @@ function math() {
   let h = document.getElementById("h").value;
   let output = document.getElementById("output");
 // PROCESSING
+  let volume = Math.PI * Math.pow (r, 2) * h;
+  let lvolume = volume / 61.024;
 // OUTPUT
-  output.value = Math.PI * Math.pow (r, 2) * h / 61.024;
+  output.value = lvolume;
 }
