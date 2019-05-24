@@ -15,8 +15,8 @@ OUTPUT: Display result in document
 // Designate HTML id's to be used within JS. Pulls information input into form and allows JS to assign numeric value to hr, w and output.
 //INPUT
 function math() {
-  let hr = document.getElementById("hr").value;
-  let w = document.getElementById("w").value;
+  let hr = parseFloat(document.getElementById("hr").value);
+  let w = parseFloat(document.getElementById("w").value);
 //PROCESSING 
   if (hr, w == "0") {
     let output = "Please enter Hours worked and Standard Wage"
