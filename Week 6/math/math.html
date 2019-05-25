@@ -1,0 +1,34 @@
+<!doctype html>
+<html>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1">
+			<title>CIT 160 - Address Builder Application</title>
+			<meta name="description" content="This page contains an application for week 4 of CIT 160">
+        	<link href="../../css/application.css" rel="stylesheet">
+					<header>
+						<h1>Week 6: Addition Quiz</h1>
+						<h2>Nicholas Hudson</h2>
+					</header>
+					<main>
+						<h3>Random Addition Quiz</h3>
+						<label>
+								What is: 
+								<input size "3" type="number" id="a" disabled> + 
+								<input type="number" id="b" disabled>
+								<br>
+								<br>
+								Input Answer Here: <input type="number" id="ans">
+						</label>
+						<label>
+							<button onclick="genQuestion()">Reset</button>
+							<br>
+							<button onclick="checkAns()">Check Answer</button>
+						</label>
+						<hr>
+						<p><span id="output"></span></p>
+					</main>
+					<footer>
+						&copy;2019 &bull; Nicholas Hudson &bull; BYU-Idaho &bull; CIT 160 &bull; <span id="currentdate"></span>
+					</footer>
+<script src="../math/js/math.js"></script>
+</html>
