@@ -19,6 +19,11 @@ function genQuestion(max, min) {
 //OUTPUT
     document.getElementById("a").value = a;
     document.getElementById("b").value = b;
+    let output = "Good luck!"
+    document.getElementById("output").innerHTML = output;
+    let ans = ""
+    document.getElementById("ans").value = ans;
+  
 }
 function checkAns() {
   let ans = parseInt(document.getElementById("ans").value);
