@@ -13,6 +13,7 @@ PROCESSING 2: On click javascript begins an else if sequence. if ans is equal to
 OUTPUT 2: Displays output underneath the problem. 
 */
 //INPUT 1 in HTML
+document.getElementById("genQuestion").addEventListener("click", genQuestion)
 //PROCESSING 1
 function genQuestion(max, min) {
   min = Math.ceil(1);
@@ -29,6 +30,7 @@ function genQuestion(max, min) {
   
 }
 //INPUT 2 in HTML
+document.getElementById("checkAns").addEventListener("click", checkAns)
 //PROCESSING 2
 function checkAns() {
   let ans = parseInt(document.getElementById("ans").value);
