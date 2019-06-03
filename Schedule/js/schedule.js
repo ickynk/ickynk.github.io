@@ -9,7 +9,7 @@ function clearFields() {
 }
 function popFields() {
 
-for(let i = 0 ; i < 48 ; i++){ getCountEmployees(i*60)}
+for(let i = 0 ; i < 24 ; i++){ getCountEmployees(i*60)}
 
 }
 function getCountEmployees(checkMinutes) {
@@ -30,7 +30,7 @@ function getCountEmployees(checkMinutes) {
       //If the start time is greater than the end time, then we want to check between 0 and the end time, and the check is greater than the starttime and 2400
       if(
         (checkMinutes >= 0 && checkMinutes <= endMinutes) || 
-        (checkMinutes >= startMinutes && checkMinutes < (24*120))
+        (checkMinutes >= startMinutes && checkMinutes < (24*60))
       ){
         employeeCt += parseInt(child.querySelector(".employees").value);
       }
@@ -45,5 +45,5 @@ function getCountEmployees(checkMinutes) {
   
   //OUTPUT
   //If you wanted to create a list or something here, then this is where you could build the HTML to do it.
-  document.getElementById('output').innerHTML += `<br>${checkMinutes/120} - ${employeeCt} Employees Working`;
+  document.getElementById('output').innerHTML += `<br>${checkMinutes/60}:00 - ${employeeCt} Employees Working`;
 }

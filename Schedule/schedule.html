@@ -5,74 +5,87 @@
 			<title>CIT 160 - Address Builder Application</title>
 			<meta name="description" content="This page contains an application for week 4 of CIT 160">
         	<link href="../Schedule/css/style.css" rel="stylesheet">
-			<header>
-  <h1>Schedule Designer</h1>
-  <h2>Robert Trammel - Nicholas Hudson</h2>
-</header>
-<main>
-  <h3>Schedule Designer</h3>
-  <div class="content-labels">
-    <label>Shift</label>
-    <label>Start Time</label>
-    <label>End Time</label>
-    <label>Workers</label>
-  </div>
-  <div class="content-fields">
-    <input type="number" class="shift" value="1" disabled>
-    <input type="time" class="start" value="05:00">
-    <input type="time" class="end" value="17:00">
-    <input type="number" min="0" class="employees" value="22">
-  </div>
-  <div class="content-fields">
-    <input type="number" class="shift" value="2" disabled>
-    <input type="time" class="start" value="08:00">
-    <input type="time" class="end" value="20:00">
-    <input type="number" class="employees" value="15">
-  </div>
-    <div class="content-fields">
-    <input type="number" class="shift" value="3" disabled>
-    <input type="time" class="start" value="08:00">
-    <input type="time" class="end" value="20:00">
-    <input type="number" class="employees" value="15">
-  </div>
-    </div>
-    <div class="content-fields">
-    <input type="number" class="shift" value="4" disabled>
-    <input type="time" class="start" value="17:30">
-    <input type="time" class="end" value="05:30">
-    <input type="number" class="employees" value="20">
-  </div>
-  </div>
-    <div class="content-fields">
-    <input type="number" class="shift" value="5" disabled>
-    <input type="time" class="start" value="19:00">
-    <input type="time" class="end" value="08:00">
-    <input type="number" class="employees" value="0">
-  </div>
-  </div>
-    <div class="content-fields">
-    <input type="number" class="shift" value="6" disabled>
-    <input type="time" class="start" value="19:00">
-    <input type="time" class="end" value="08:00">
-    <input type="number" class="employees" value="0">
-  </div>
-  </div>
-    <div class="content-fields">
-    <input type="number" class="shift" value="7" disabled>
-    <input type="time" class="start" value="19:00">
-    <input type="time" class="end" value="08:00">
-    <input type="number" class="employees" value="0">
-  </div>
-  <hr>
-  <h4>Run the numbers:
-  <!--<input type="time" id="hourToCheck" value="07:00">-->
-  <button onclick="popFields()">Get Count</button>
-  <button onclick="clearFields()">Reset</button>
-  <hr>
-<p>Count of Staff by Hour:<span id="output"></span></p>
-</h4>
-    </main>
-<footer>
-</footer>
+					<header>
+						<h1>Schedule Designer</h1>
+						<h2>Robert Trammel - Nicholas Hudson</h2>
+					</header>
+					<main>
+						<h3>Schedule Designer</h3>
+						<div class="content-labels">
+							<label>Shift</label>
+							<label>Start Time</label>
+							<label>End Time</label>
+							<label>Workers</label>
+						</div>
+						<div class="content-fields">
+							<input type="number" class="shift" value="1" disabled>
+							<input type="time" class="start" value="05:00">
+							<input type="time" class="end" value="17:00">
+							<input type="number" min="0" class="employees" value="22">
+						</div>
+						<div class="content-fields">
+							<input type="number" class="shift" value="2" disabled>
+							<input type="time" class="start" value="08:00">
+							<input type="time" class="end" value="20:00">
+							<input type="number" class="employees" value="15">
+						</div>
+							<div class="content-fields">
+							<input type="number" class="shift" value="3" disabled>
+							<input type="time" class="start" value="08:00">
+							<input type="time" class="end" value="20:00">
+							<input type="number" class="employees" value="15">
+						</div>
+							</div>
+							<div class="content-fields">
+							<input type="number" class="shift" value="4" disabled>
+							<input type="time" class="start" value="17:30">
+							<input type="time" class="end" value="05:30">
+							<input type="number" class="employees" value="20">
+						</div>
+						</div>
+							<div class="content-fields">
+							<input type="number" class="shift" value="5" disabled>
+							<input type="time" class="start" value="19:00">
+							<input type="time" class="end" value="08:00">
+							<input type="number" class="employees" value="0">
+						</div>
+						</div>
+							<div class="content-fields">
+							<input type="number" class="shift" value="6" disabled>
+							<input type="time" class="start" value="19:00">
+							<input type="time" class="end" value="08:00">
+							<input type="number" class="employees" value="0">
+						</div>
+						</div>
+							<div class="content-fields">
+							<input type="number" class="shift" value="7" disabled>
+							<input type="time" class="start" value="19:00">
+							<input type="time" class="end" value="08:00">
+							<input type="number" class="employees" value="0">
+						</div>
+						</div>
+							<div class="content-fields">
+							<input type="number" class="shift" value="8" disabled>
+							<input type="time" class="start" value="19:00">
+							<input type="time" class="end" value="08:00">
+							<input type="number" class="employees" value="0">
+						</div>
+						</div>
+							<div class="content-fields">
+							<input type="number" class="shift" value="9" disabled>
+							<input type="time" class="start" value="19:00">
+							<input type="time" class="end" value="08:00">
+							<input type="number" class="employees" value="0">
+						</div>
+						<hr>
+						<h4>Run the numbers:</h4>
+						<!--<input type="time" id="hourToCheck" value="07:00">-->
+						<button onclick="popFields()">Get Count</button>
+						<button onclick="clearFields()">Reset</button>
+						<hr>
+					<p>Count of Staff by Hour:<span id="output"></span></p>
+					</main>
+					<footer>
+					</footer>
 <script src="../Schedule/js/schedule.js"></script>
 </html>
