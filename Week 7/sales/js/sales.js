@@ -28,7 +28,7 @@ function finalSale() {
   let tax = .06;
   let sub = parseInt(document.getElementById("subT").value);
   
-  if (d.getDay() == (2 || 3)) {
+  if (d.getDay() == (2) || d.getDay() == (3)) {
     let disc = .10;
     let disctotal = sub * disc;
     let nsubtotal = sub - disctotal;

@@ -25,7 +25,7 @@ let day = new Array(7);
 document.getElementById("dofw").innerHTML = day[d.getDay()];
 
 //INPUT, PROCESSING and OUTPUT are contained in each statement.
-  if (d.getDay() == (0 || 6)) {
+if (d.getDay() == (0) || d.getDay() == (6)) {
     let sleep = " Sleep in.";
     document.getElementById("sleepin").innerHTML = sleep
   } else if ((d.getMonth() == 0) && (d.getDate() == 1)) {
