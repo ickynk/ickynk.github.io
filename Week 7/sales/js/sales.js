@@ -29,15 +29,24 @@ function finalSale() {
   let sub = parseInt(document.getElementById("subT").value);
   
   if (d.getDay() == (2) || d.getDay() == (3)) {
-    let disc = .10;
-    let disctotal = sub * disc;
-    let nsubtotal = sub - disctotal;
-    let ttotal = nsubtotal * tax;
-    let total = nsubtotal + ttotal;
+    if (sub > 50) {
+        let disc = .10;
+        let disctotal = sub * disc;
+        let nsubtotal = sub - disctotal;
+        let ttotal = nsubtotal * tax;
+        let total = nsubtotal + ttotal;
 
     //OUTPUT
-    document.getElementById("toutput").innerHTML = "Final Cost: $" + total.toFixed(2) + "<br> You Saved $" + disctotal.toFixed(2) + "!";
-  } else {
+        document.getElementById("toutput").innerHTML = "Final Cost: $" + total.toFixed(2) + "<br> You Saved $" + disctotal.toFixed(2) + "!";
+    } else {
+    //PROCESSING
+        let ttotal = sub * tax;
+        let total = sub + ttotal;
+    
+    //OUTPUT
+        document.getElementById("toutput").innerHTML = "Final Cost: $" + total.toFixed(2);
+  
+  }} else {
     //PROCESSING
     let ttotal = sub * tax;
     let total = sub + ttotal;
