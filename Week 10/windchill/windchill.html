@@ -5,18 +5,20 @@
 			<title>CIT 160 - Address Builder Application</title>
 			<meta name="description" content="This page contains an application for week 4 of CIT 160">
         	<link href="../../css/application.css" rel="stylesheet">
-			  <header>
-				<h1>Week 8: Number Guess Game</h1>
+			<header>
+				<h1>Week 10: Wind Chill</h1>
 				<h2>Nicholas Hudson</h2>
 			  </header>
 			  <main>
-				<h3>Click the Button Below to Start the Game</h3>
-				<button onclick="numberGuessGame()">Guess a number!</button>
+				<h3>Wind Chill</h3>
+				<label>What is the current temperature? <input type="number" id="t"> F&deg</label>
+				<label>What is the current wind speed? <input type="number" id="s">MPH</label>
+				<button onclick="doInputOutput()">Calculate Wind Chill</button>
 				<hr>
-				<div id="output"></div>
+				<div>Wind Chill Factor:<br> <span id="output"></span></div>
 			  </main>
 			  <footer>
 				&copy;2019 &bull; Nicholas Hudson &bull; BYU-Idaho &bull; CIT 160 &bull; <span id="currentdate"></span>
 			  </footer>
-<script src="../guess/js/guess.js"></script>
+<script src="../windchill/js/windchill.js"></script>
 </html>
