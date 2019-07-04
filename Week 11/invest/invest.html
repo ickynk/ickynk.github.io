@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1">
+			<title>CIT 160 - Address Builder Application</title>
+			<meta name="description" content="This page contains an application for week 4 of CIT 160">
+        	<link href="../../css/application.css" rel="stylesheet">
+			<header>
+				<h1>Week 11: Investment Calculator</h1>
+				<h2>Nicholas Hudson</h2>
+			  </header>
+			  <main>
+				<h3>Investment Calculator</h3>
+				<label>Amount invested (principal) <input class="investcalc" type="number" id="p"></label>
+				<label>Annual rate (example: .08) <input class="investcalc" type="number" id="r"></label>
+				<label>Number of years <input class="investcalc" type="number" id="y"></label>
+				<label>Periods per year <input class="investcalc" type="number" id="ppy"></label>
+				<button onclick="doFV()">Compute future value</button>
+				<hr>
+				<div>Future Value: <span id="output"></span></div>
+			  </main>
+			  <footer>
+				&copy;2019 &bull; Nicholas Hudson &bull; BYU-Idaho &bull; CIT 160 &bull; <span id="currentdate"></span>
+			  </footer>
+<script src="../invest/js/invest.js"></script>
+</html>
